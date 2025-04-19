@@ -1,10 +1,17 @@
-from packages.cowsay_demo.greeting import greet_to
+# server.py
+from fastmcp import FastMCP
 
 
-def main():
-    # use argument to greet
-    greet_to(your_name="Alan")
+# Create an MCP server
+mcp = FastMCP("FastMCP Python Preset")
+
+
+# Add an addition tool
+@mcp.tool()
+def add(a: int, b: int) -> int:
+    """Add two numbers"""
+    return a + b
 
 
 if __name__ == "__main__":
-    main()
+    mcp.run()
