@@ -2,6 +2,7 @@
 run:
 	@uvx fastmcp run src/main.py
 
+.PHONY: dev
 dev:
 	@uvx fastmcp dev src/main.py
 
@@ -12,4 +13,4 @@ fmt:
 
 .PHONY: test
 test:
-	@echo "Define your test!"
+	@uvx pytest tests/ 

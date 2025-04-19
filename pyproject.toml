@@ -14,4 +14,9 @@ dependencies = [
 dev = [
     "ipykernel==6.29.5",
     "ruff==0.9.7",
+    "pytest==8.3.5",
 ]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
