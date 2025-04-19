@@ -13,4 +13,4 @@ fmt:
 
 .PHONY: test
 test:
-	@uvx pytest tests/ 
+	@uvx pytest

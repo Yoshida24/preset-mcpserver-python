@@ -1,5 +1,5 @@
-# from src.main import add
+from src.tools.add.add import add
 
 
 def test_add():
-    assert 1 == 1
+    assert add(1, 2) == 3

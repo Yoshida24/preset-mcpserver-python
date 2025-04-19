@@ -1,5 +1,6 @@
 # server.py
 from fastmcp import FastMCP
+from src.tools.add.add import add as _add
 
 
 # Create an MCP server
@@ -10,7 +11,7 @@ mcp = FastMCP("FastMCP Python Preset", debug=True)
 @mcp.tool()
 def add(a: int, b: int) -> int:
     """Add two numbers"""
-    return a + b
+    return _add(a, b)
 
 
 if __name__ == "__main__":
