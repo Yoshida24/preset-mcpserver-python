@@ -3,7 +3,7 @@ from fastmcp import FastMCP
 
 
 # Create an MCP server
-mcp = FastMCP("FastMCP Python Preset")
+mcp = FastMCP("FastMCP Python Preset", debug=True)
 
 
 # Add an addition tool

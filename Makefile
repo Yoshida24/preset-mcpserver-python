@@ -1,6 +1,9 @@
 .PHONY: run
 run:
-	uv run python src/main.py
+	@uvx fastmcp run src/main.py
+
+dev:
+	@uvx fastmcp dev src/main.py
 
 .PHONY: fmt
 fmt:
